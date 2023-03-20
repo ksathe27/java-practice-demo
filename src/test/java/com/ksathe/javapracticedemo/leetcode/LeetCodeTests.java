@@ -30,4 +30,17 @@ public class LeetCodeTests {
         assertEquals(result1, s.lengthOfLIS2(input1));
         assertEquals(result2, s.lengthOfLIS2(input2));
     }
+
+    @Test
+    public void testLeetcode3() {
+        //https://leetcode.com/problems/greatest-sum-divisible-by-three/
+        int[] input1 = {3,6,5,1,8};
+        int[] input2 = {5,2, 2, 2};
+        int[] input3 = {1,2,3,4,4};
+        Solution1262 s = new Solution1262();
+        assertEquals(12, s.maxSumDivThree(input3));
+        assertEquals(s.maxSumDivThree(new int[]{2, 19, 6, 16, 5, 10, 7, 4, 11, 6}), 84);
+        assertEquals(s.maxSumDivThree(input1), 18);
+        assertEquals(9, s.maxSumDivThree(input2));
+    }
 }
