@@ -7,12 +7,13 @@ Sample codes for java applications
 
 # Pre-requisites
 
-  Install brew
-  Install maven (using brew) :
-  Install java (using brew) : https://mkyong.com/java/how-to-install-java-on-mac-osx/
-  Generate project using https://start.spring.io/
+  - Install brew
+  - Install maven (using brew) :
+  - Install java (using brew) : https://mkyong.com/java/how-to-install-java-on-mac-osx/
+  - Generate project using https://start.spring.io/
 
 # Leetcode practice
-
     Leetcode solutions can be found in package com.ksathe.javapracticedemo.leetcode; 
-    LeetCodeTests covers examples for each problems and verify them.
+    LeetCodeTests covers examples for each problems and verify the solutions.
+
+# TBD
