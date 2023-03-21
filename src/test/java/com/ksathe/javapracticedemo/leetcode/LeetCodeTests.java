@@ -43,4 +43,18 @@ public class LeetCodeTests {
         assertEquals(s.maxSumDivThree(input1), 18);
         assertEquals(9, s.maxSumDivThree(input2));
     }
+
+    @Test
+    public void testLeetcode4() {
+        //https://leetcode.com/problems/decode-ways/
+        Solution92 s = new Solution92();
+        String input1 = "111111111111111111111111111111111111111111111";
+        String input2 = "226";
+        String input3 = "06";
+
+        assertEquals(5, s.numDecodings("1111"));
+        assertEquals(1836311903, s.numDecodings2(input1));
+        assertEquals(3, s.numDecodings(input2));
+        assertEquals(0, s.numDecodings(input3));
+    }
 }
