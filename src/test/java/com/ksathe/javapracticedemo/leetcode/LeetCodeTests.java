@@ -57,4 +57,12 @@ public class LeetCodeTests {
         assertEquals(3, s.numDecodings(input2));
         assertEquals(0, s.numDecodings(input3));
     }
+
+    @Test
+    public void testLeetCode5() {
+        Solution357 s = new Solution357();
+        assertEquals(739, s.countNumbersWithUniqueDigits(3));
+        assertEquals(10,s.countNumbersWithUniqueDigits(1));
+        assertEquals(91, s.countNumbersWithUniqueDigits(2));
+    }
 }
