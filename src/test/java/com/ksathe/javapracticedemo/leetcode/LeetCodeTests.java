@@ -65,4 +65,15 @@ public class LeetCodeTests {
         assertEquals(10,s.countNumbersWithUniqueDigits(1));
         assertEquals(91, s.countNumbersWithUniqueDigits(2));
     }
+
+    @Test
+    public void testLeetCode6() {
+        Solution1155 s = new Solution1155();
+
+        //assertEquals(1, s.numRollsToTarget(1, 6, 3));
+        assertEquals(1, s.numRollsToTarget(1, 6, 3));
+        assertEquals(6, s.numRollsToTarget(2, 6, 7));
+        assertEquals(222616187, s.numRollsToTarget(30, 30, 500));
+        assertEquals(469310697, s.numRollsToTarget(30, 30, 666));
+    }
 }
