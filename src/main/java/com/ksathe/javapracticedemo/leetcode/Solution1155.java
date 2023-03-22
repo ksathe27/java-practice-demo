@@ -23,7 +23,7 @@ public class Solution1155 {
             return dp[n][target];
         }
         for (int nIndex = 2; nIndex <= n; nIndex++) {
-            int  maxLevel = (nIndex * k) > target ? target : nIndex * k;// dp[nIndex][nIndex to maxLevel]
+            int  maxLevel = Math.min((nIndex * k), target);// dp[nIndex][nIndex to maxLevel]
             for (int j = nIndex; j <= maxLevel; j++) {
                 // agg for each nIndex, currTarget from base to base + k;
                 int tempSum = 0;
