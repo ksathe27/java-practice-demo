@@ -70,10 +70,20 @@ public class LeetCodeTests {
     public void testLeetCode6() {
         Solution1155 s = new Solution1155();
 
-        //assertEquals(1, s.numRollsToTarget(1, 6, 3));
+        assertEquals(1, s.numRollsToTarget(1, 6, 3));
         assertEquals(1, s.numRollsToTarget(1, 6, 3));
         assertEquals(6, s.numRollsToTarget(2, 6, 7));
         assertEquals(222616187, s.numRollsToTarget(30, 30, 500));
         assertEquals(469310697, s.numRollsToTarget(30, 30, 666));
+    }
+
+    @Test
+    public void testLeetCode7() {
+        Solution486 s = new Solution486();
+
+        assertEquals(true, s.PredictTheWinner(new int[]{1,5,233,7}));
+
+        assertEquals(true, s.stoneGame(new int[]{5,17,19,1,15,19,11,9,6,5,11,7,12,12,2,14,3,6,18,3}));
+        assertEquals(true, s.stoneGame(new int[]{5,19,15,14,3,6}));
     }
 }
