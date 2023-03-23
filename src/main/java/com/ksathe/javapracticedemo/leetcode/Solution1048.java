@@ -3,6 +3,7 @@ package com.ksathe.javapracticedemo.leetcode;
 import java.util.*;
 
 public class Solution1048 {
+    //https://leetcode.com/problems/longest-string-chain/description/
     Map<Integer, List<String>> lookup = new TreeMap<>();
 
     public int longestStrChain(String[] words) {
