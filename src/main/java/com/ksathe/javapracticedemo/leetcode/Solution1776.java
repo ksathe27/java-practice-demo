@@ -1,6 +1,9 @@
 package com.ksathe.javapracticedemo.leetcode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
 public class Solution1776 {
     //https://leetcode.com/problems/car-fleet-ii/

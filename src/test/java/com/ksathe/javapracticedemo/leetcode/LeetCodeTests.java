@@ -2,9 +2,6 @@ package com.ksathe.javapracticedemo.leetcode;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 import static com.ksathe.javapracticedemo.TestUtils.doubleArraysEqual;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -110,6 +107,17 @@ public class LeetCodeTests {
         int[][] cars2 = {{3,4},{5,4},{6,3},{9,1}};
         double[] ans2 = {2.00000,1.00000,1.50000,-1.00000};
         assertTrue(doubleArraysEqual(ans2, s.getCollisionTimes(cars2)));
+    }
 
+    @Test
+    public void testLeetCode10() {
+        Solution1531 s = new Solution1531();
+        String input1 = "aaabcccd";
+        String input2 = "aabbaa";
+
+        assertEquals(4, s.getLengthOfOptimalCompression(input1, 2));
+        assertEquals(2, s.getLengthOfOptimalCompression(input2, 2));
+        assertEquals(2, s.getLengthOfOptimalCompression("cdcbccddcaccbabdadcbda", 20));
+        assertEquals(12, s.getLengthOfOptimalCompression("ccacbaacabaabbcaccbabccacbbac", 9));//
     }
 }
