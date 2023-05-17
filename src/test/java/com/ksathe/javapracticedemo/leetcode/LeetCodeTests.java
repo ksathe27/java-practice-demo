@@ -1,5 +1,6 @@
 package com.ksathe.javapracticedemo.leetcode;
 
+import com.ksathe.javapracticedemo.leetcode.multi.Sol552_1067_1088;
 import org.junit.jupiter.api.Test;
 
 import static com.ksathe.javapracticedemo.TestUtils.doubleArraysEqual;
@@ -132,4 +133,25 @@ public class LeetCodeTests {
         assertEquals(10, s.countSubarrays(input2, 1, 1));
         assertEquals(90526, s.countSubarrays(input3, 78085, 995214));
     }
+
+    @Test
+    public void testLeetCode12() {
+        Solution2246 s = new Solution2246();
+        int[] input1 = {-1,0,0,0};
+        String string1 = "aabc";
+        int[] input2 = {-1,0,0,1,1,2};
+        String string2 = "abacbe";
+        //assertEquals(0, s.longestPath(input1, string1));
+        //assertEquals(3, s.longestPath(input2, string2));
+    }
+
+    @Test
+    public void testLCM552_1067_1088() {
+        Sol552_1067_1088 s1 = new Sol552_1067_1088();
+
+        //552
+        //assertEquals(6, s1.confusingNumberII(20));
+        assertEquals(19, s1.confusingNumberII(100));
+    }
+
 }
